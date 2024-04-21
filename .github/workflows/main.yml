@@ -1,0 +1,40 @@
+name: Deploy To S3
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+    
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout v2
+        uses: actions/checkout@v2
+
+      - name: Delete all files in S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          aws s3 rm s3://pd-ho --recursive --region ap-northeast-2
+      
+      - name: Deploy To s3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          
+        run: |
+          aws s3 cp \
+            --recursive \
+            --region ap-northeast-2 \
+            ./ s3://pd-ho
+      - name: Invalidate CloudFront Distribution
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ap-northeast-2
+        run: aws cloudfront create-invalidation --distribution-id E1AODFOBTTBTIQ --paths "/*"
+
