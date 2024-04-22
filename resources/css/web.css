@@ -63,7 +63,7 @@ button {
   border-radius: 42px;
 }
 
-.button-login {
+.button-login , .tour-button{
   background: rgb(255, 255, 255);
 }
 
@@ -135,3 +135,53 @@ button {
   background: rgb(29, 30, 28);
   color: white;
 }
+
+.virtual-tour{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tour-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour-page-title {
+  display: flex;
+  justify-content: center;
+}
+
+.tour-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tour-title-text {
+  font-size: 3rem;
+  width: 700px;
+  text-align: center;
+}
+
+.tour-text {
+  display: flex;
+  justify-content: center;
+  width: 830px;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.tour-button {
+  margin : 75px;
+}
+
+.tour-img {
+  position: absolute;
+  left :64px;
+  right: 64px;;
+}
+
+
