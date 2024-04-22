@@ -1,0 +1,102 @@
+.header-nav {
+  margin: 0 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav > div ul li {
+  float: left;
+  padding: 0.5rem;
+  line-height: 30px;
+}
+
+.header-nav > div ul {
+  float: right;
+  list-style: none;
+  padding: 0;
+}
+
+.header-nav>div button {
+  float: right;
+  padding: 0;
+}
+
+.header-logo {
+  font-size: 24px;
+  width: 118.95px;
+  height: 24px;
+  font-weight: bolder;
+}
+
+ul li {
+  margin: 0 24px;
+  font-size: 1.1rem;
+}
+
+ul li label{
+  cursor: pointer;
+}
+
+button {
+  position: static;
+  width: 100px;
+  height: 45px;
+  /* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px 12px 24px;
+  flex: none;
+  flex-grow: 0;
+  margin: 0px 6px;
+}
+
+.button-login {
+  border: 1px solid rgb(29, 30, 28);
+  border-radius: 42px;
+  background: rgb(255, 255, 255);
+}
+
+.button-sign-up {
+  border: 1px solid rgb(29, 30, 28);
+  border-radius: 42px;
+  background: rgb(29, 30, 28);
+  color: white;
+}
+
+/* hero section */
+
+.hero > article div h1{
+  color: rgb(29, 30, 28);
+    font-family: Pretendard;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    /* Heading */
+    position: static;
+    width: 640px;
+    height: 288px;
+    /* 자동 레이아웃 */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0px;
+    
+    
+      /* Inside Auto Layout */
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+      margin: 32px 0px;
+}
