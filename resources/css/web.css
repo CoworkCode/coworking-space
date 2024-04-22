@@ -277,6 +277,11 @@ button {
   justify-content: center;
 }
 
+.features-article > div {
+  display: flex;
+  flex-direction: row;
+}
+
 .features-column {
   display: flex;
   align-items: center;
@@ -284,6 +289,7 @@ button {
   flex-direction: column;
   margin: 4rem 1rem;
 }
+
 
 .features-column-title {
   margin: 0 1rem;
