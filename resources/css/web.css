@@ -166,3 +166,73 @@ button {
 .social-title {
   color: gray;
 }
+
+/* Features Section */
+.features {
+  padding: 10rem 0;
+}
+
+.features-article {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  flex-direction: column;
+}
+
+.features-article > h2 {
+  /* Heading */
+  width: fit-content;
+  height: 58px;
+  padding: 0px;
+  margin: 3rem 0;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700px;
+  line-height: 120%;
+/* 자동 레이아웃 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+
+
+/* Inside Auto Layout */
+  flex: none;
+  flex-grow: 0;
+  margin: 0px 16px;
+}
+
+.features-article > h2 img {
+  margin: 0 1rem;
+}
+
+.features-columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 4rem 1rem;
+}
+
+.features-column-title {
+  margin: 0 1rem;
+}
+
+.features-column-text {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
+}
