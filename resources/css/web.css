@@ -375,53 +375,156 @@ button {
   position: absolute;
 }
 
-.testimonial-contents:hover .testimonial-content:first-child {
+.testimonial-content:first-child {
   animation: move-first 3s ease-out forwards;
+  background-color: #d3f985;
+  z-index: 3;
 }
 
-.testimonial-contents:hover .testimonial-content:nth-child(2) {
+.testimonial-content:nth-child(2) {
   animation: move-second 3s ease-out forwards;
+  background-color: #f1f1f1;
+  z-index: 0;
 }
 
-.testimonial-contents:hover .testimonial-content:nth-child(3) {
+.testimonial-content:nth-child(3) {
   animation: move-third 3s ease-out forwards;
+  background-color: #a6e8f6;
+  z-index: 2;
 }
 
-.testimonial-contents:hover .testimonial-content:nth-child(4) {
+.testimonial-content:nth-child(4) {
   animation: move-fourth 3s ease-out forwards;
+  background-color: #fcbedc;
+  z-index: 5;
 }
 
-.testimonial-contents:hover .testimonial-content:nth-child(5) {
+.testimonial-content:nth-child(5) {
   animation: move-fifth 3s ease-out forwards;
+  background-color: #fbc899;
+  z-index: 4;
 }
+
 @keyframes move-first {
-  25% {
+  0% {
     transform: translate(-160%, -90%);
   }
+  25% {
+    transform: translate(-100%, -75%)  rotate(-8.13deg);
+  }
   100% {
-    transform: translate(-160%, -90%);
+    transform: translate(-100%, -75%)  rotate(-8.13deg);
   }
 }
 
 @keyframes move-second {
-  25% {
+  0% {
     transform: translate(-50%, -120%);
   }
+  25% {
+    transform: translate(-50%, -100%) rotate(10.09deg);
+  }
   100% {
-    transform: translate(-50%, -120%);
+    transform: translate(-50%, -100%) rotate(10.09deg);
   }
 }
 
 @keyframes move-third {
-  25% {
+  0% {
     transform: translate(65%, -90%);
   }
+  25% {
+    transform: translate(25%, -75%) rotate(-4.03deg);
+  }
   100% {
-    transform: translate(65%, -90%);
+    transform: translate(25%, -75%) rotate(-4.03deg);
   }
 }
 
 @keyframes move-fourth {
+  0% {
+    transform: translate(-100%, 20%);
+  }
+  25% {
+    transform: translate(-75%, -10%) rotate(7.68deg);
+  }
+  100% {
+    transform: translate(-75%, -10%) rotate(7.68deg);
+  }
+}
+
+@keyframes move-fifth {
+  0% {
+    transform: translate(40%, 20%);
+  }
+  25% {
+    transform: translate(0%, 0%) rotate(-10.01deg);
+  }
+  100% {
+  transform: translate(0%, 0%) rotate(-10.01deg);
+  }
+  
+}
+
+.testimonial-contents:hover .testimonial-content:first-child {
+  animation: move-first-hover 3s ease-out forwards;
+}
+
+.testimonial-contents:hover .testimonial-content:nth-child(2) {
+  animation: move-second-hover 3s ease-out forwards;
+}
+
+.testimonial-contents:hover .testimonial-content:nth-child(3) {
+  animation: move-third-hover 3s ease-out forwards;
+}
+
+.testimonial-contents:hover .testimonial-content:nth-child(4) {
+  animation: move-fourth-hover 3s ease-out forwards;
+}
+
+.testimonial-contents:hover .testimonial-content:nth-child(5) {
+  animation: move-fifth-hover 3s ease-out forwards;
+}
+@keyframes move-first-hover {
+  0% {
+    transform: translate(-100%, -75%)  rotate(-8.13deg);
+  }
+  25% {
+    transform: translate(-160%, -90%);
+  }
+  100% {
+    transform: translate(-160%, -90%);
+  }
+}
+
+@keyframes move-second-hover {
+  0% {
+    transform: translate(-50%, -100%) rotate(10.09deg);
+  }
+  25% {
+    transform: translate(-50%, -120%);
+  }
+  100% {
+    transform: translate(-50%, -120%);
+  }
+}
+
+@keyframes move-third-hover {
+  0% {
+    transform: translate(25%, -75%) rotate(-4.03deg);
+  }
+  25% {
+    transform: translate(65%, -90%);
+  }
+  100% {
+    transform: translate(65%, -90%);
+  }
+}
+
+@keyframes move-fourth-hover {
+  0% {
+    transform: translate(-75%, -10%) rotate(7.68deg);
+  }
   25% {
     transform: translate(-100%, 20%);
   }
@@ -430,7 +533,10 @@ button {
   }
 }
 
-@keyframes move-fifth {
+@keyframes move-fifth-hover {
+  0% {
+    transform: translate(0%, 0%) rotate(-10.01deg);
+  }
   25% {
     transform: translate(40%, 20%);
   }
