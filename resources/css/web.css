@@ -1,7 +1,19 @@
+* {
+}
+body {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 
+}
+
+body > div {
+  max-width: 1400px;
+}
 
 .header-nav {
-  margin: 0 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,6 +113,7 @@ button {
 .hero {
   width: inherit;
   height: inherit;
+  margin-top: 50px;
 }
 
 .hero-article-text > h1{
@@ -113,7 +126,7 @@ button {
     /* Heading */
     position: static;
     width: 100%; 
-    max-width: 700px;
+    max-width: 450px;
     
     /* 자동 레이아웃 */
     display: inline;
@@ -155,7 +168,6 @@ button {
 }
 
 .hero-article-text {
-  padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -215,7 +227,7 @@ button {
 .tour-img {
   position: absolute;
   left :64px;
-  right: 64px;;
+  right: 64px;
 }
 
 /* Social Proof Section */
@@ -298,4 +310,7 @@ button {
   letter-spacing: 0%;
   text-align: center;
 }
+
+
+
 
