@@ -6,6 +6,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.header-logo > a {
+  color: #000000;
+  text-decoration: none;
+}
+
 .header-nav > div {
   display: flex;
   justify-content: space-between;
@@ -61,17 +67,36 @@ button {
   min-width: 100px;
   border: 1px solid rgb(29, 30, 28);
   border-radius: 42px;
+  transition: background-color 0.3s ease; 
 }
 
 .button-login {
   background: rgb(255, 255, 255);
 }
 
-.button-sign-up {
+
+.button-login:hover {
+  background-color: #f0f0f0;
+}
+
+.button-login:active {
+  background-color: #e0e0e0;
+}
+
+.button-sign-up, .button-claim {
   background: rgb(29, 30, 28);
   color: white;
 }
 
+.button-sign-up:hover, .button-claim:hover {
+  background-color:#333;
+}
+
+.button-sign-up:active, .button-claim:active {
+  background-color: #666;
+}
+
+ 
 /* hero section */
 .hero {
   width: inherit;
@@ -131,7 +156,13 @@ button {
   overflow-wrap: break-word;
 }
 
-.button-claim {
-  background: rgb(29, 30, 28);
-  color: white;
+/* Social Proof Section */
+.social-proof {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.social-title {
+  color: gray;
 }
