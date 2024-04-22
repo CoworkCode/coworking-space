@@ -112,11 +112,11 @@ button {
     text-align: left;
     /* Heading */
     position: static;
-    width: 100%;
+    width: 100%; 
+    max-width: 700px;
     
     /* 자동 레이아웃 */
-    display: flex;
-    flex-direction: column;
+    display: inline;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0px;
@@ -138,6 +138,13 @@ button {
   letter-spacing: 0%;
   text-align: left;
   width: 75%;
+}
+
+.circle-effect {
+  background-image: url(/resources/images/circle.svg);
+  width: auto;
+  background-position: center;
+  background-size: contain
 }
 
 .hero-article {
@@ -291,3 +298,4 @@ button {
   letter-spacing: 0%;
   text-align: center;
 }
+
