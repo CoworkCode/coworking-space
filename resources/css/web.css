@@ -85,33 +85,29 @@ button {
   transition: background-color 0.3s ease;
 }
 
-.button-login,
-.tour-button {
+.white-button {
   background: rgb(255, 255, 255);
 }
 
 
-.button-login:hover {
+.white-button:hover {
   background-color: #f0f0f0;
 }
 
-.button-login:active {
+.white-button:active {
   background-color: #e0e0e0;
 }
 
-.button-sign-up,
-.button-claim {
+.black-button {
   background: rgb(29, 30, 28);
   color: white;
 }
 
-.button-sign-up:hover,
-.button-claim:hover {
+.black-button:hover {
   background-color: #333;
 }
 
-.button-sign-up:active,
-.button-claim:active {
+.black-button:active {
   background-color: #666;
 }
 
@@ -227,9 +223,6 @@ button {
   text-align: center;
 }
 
-.tour-button {
-  margin: 75px;
-}
 
 .tour-img {
   position: absolute;
