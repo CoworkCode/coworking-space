@@ -4,15 +4,16 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  min-width: 1600px;
+  min-width: 1400px;
 }
 
 body>div {
-  max-width: 1600px;
+  max-width: 1400px;
 }
 
 section {
   margin: 112px 0;
+  margin-top: 150px;
 }
 
 .header-nav {
@@ -650,7 +651,7 @@ button {
 }
 
 .statistics-row > div {
-  margin-right: 90px ;
+  margin-right: 90px;
   margin-bottom: 60px;
 }
 .statistics-row > div .sub-text {
@@ -663,16 +664,13 @@ button {
   display: inline-block;
 }
 
+.detail-fow > div {
+  width: 200px;
+}
+
 .row-ball {
   position: relative;
   right: 77px;
   top : 12px;
-  z-index: -1;
-}
-
-.row-pink-ball {
-  position: relative;
-  right:108px;
-  top: 12px;
   z-index: -1;
 }
