@@ -966,3 +966,9 @@ button {
   letter-spacing: 0%;
   text-align: center;
 }
+
+.blog > div {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
