@@ -6,6 +6,7 @@
 
    
 </div>
+
  
 
 # 개요
@@ -17,7 +18,17 @@
 [페어프로그래밍이란?](https://velog.io/@congaweb/Pair-Programing)
 
 
-## 📍 참여 인원
+# 프로젝트 결과
+
+<div align="center">
+
+ 
+ ![result](https://github.com/CoworkCode/coworking-space/assets/83682424/861a11ca-7276-4c3d-9d45-8dec1f18cb82)
+
+ 
+</div>
+
+ ## 📍 참여 인원
 <table style="border: 0.5 solid gray">
  <tr>
     <td align="center"><a href="https://github.com/subsub97"><img src="https://avatars.githubusercontent.com/subsub97" width="130px;" alt=""></td>
@@ -166,6 +177,8 @@
 
 
 [CSS 컨벤션 참조](https://velog.io/@ocy7111/HTMLCSSSass-%EC%BB%A8%EB%B2%A4%EC%85%98)
+
+
 
 # ⛳ 그라운드 룰
 - 즐기고 창의적으로 하자
